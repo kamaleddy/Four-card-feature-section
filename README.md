@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [My Solution](https://www.frontendmentor.io/solutions/building-four-card-feature-section-with-css-grid-and-flexbox-dFU-eaDY0i)
 - Live Site URL: [live site URL here](https://kamaleddy.github.io/Four-card-feature-section/)
 
 ## My process
