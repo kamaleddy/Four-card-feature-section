@@ -8,10 +8,6 @@
   padding: 0;
 }
 
-*:not(body, html) {
-  /* border: 1px dashed burlywood; */
-}
-
 :root {
   --primary-red: hsl(0, 78%, 62%);
   --primary-cyan: hsl(180, 62%, 55%);
@@ -48,12 +44,12 @@ p {
 
 .main {
   /* background-color: yellowgreen; */
-  width: min(90%, 71rem);
+  inline-size: min(90%, 71rem);
   margin: calc(3vw + 1em) auto;
 }
 
 .header {
-  width: min(100%, 500px);
+  inline-size: min(100%, 500px);
   margin: auto;
   text-align: center;
   padding-bottom: 3em;
@@ -64,7 +60,7 @@ p {
   margin-bottom: 1rem;
 }
 
-.header .light {
+.header .light-title {
   font-weight: 200;
 }
 
@@ -74,36 +70,34 @@ p {
 
 .features {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(auto, 1fr));
   gap: 2rem;
 }
 
 .feature {
-  /* background-color: brown; */
   padding: 2rem;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
   border-radius: 0.5rem;
-  position: relative;
 }
 
 .one {
-  border-top: 5px solid var(--primary-cyan);
+  border-block-start: 5px solid var(--primary-cyan);
 }
 
 .two {
-  border-top: 5px solid var(--primary-red);
+  border-block-start: 5px solid var(--primary-red);
 }
 
 .three {
-  border-top: 5px solid var(--primary-orange);
+  border-block-start: 5px solid var(--primary-orange);
 }
 
 .four {
-  border-top: 5px solid var(--primary-blue);
+  border-block-start: 5px solid var(--primary-blue);
 }
 
 .icon {
-  margin-top: 2rem;
+  margin-block-start: 2rem;
   display: flex;
   flex-direction: row-reverse;
 }
@@ -118,13 +112,7 @@ p {
   text-decoration: none;
 }
 
-@media (min-width: 70em) {
-  .features {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 62em) {
+@media (min-width: 52em) {
   .features {
     grid-template-columns: repeat(6, 1fr);
   }
